@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="Soledad Osc" content="Challenge Alura">
+    <meta name=" description" content="Encriptador de texto">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encriptador</title>
+    <link rel="stylesheet" href="estilos.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+</head>
+<body>
+    <main>
+    <div class="container1">
+        <a href="index.html"> <img id="imageAlura" src="imagenes/alura.png" alt="Logo Alura" width="30"></a>
+      <br>
+      <textarea type="text" id="ingresarTexto" placeholder="Ingrese el texto aquí" required></textarea> 
+      <span id="validacionMensaje" style="color: red; display: none;"><i class="fas fa-exclamation-circle"></i>Solo se permiten letras minúsculas sin acentos.</span>   
+    
+        <div id="botones">
+           
+            <button onclick="encriptarTexto()" class="encripta">Encriptar</button> 
+            <button onclick="desencriptarTexto()" class="desencripta">Desencriptar</button>
+            </div>
+
+    </div>    
+
+<div class="container2">
+    <div id="text-box">
+       <div id="text-area">
+        <img id="image" src="imagenes/imagen-busquera.jpg" alt="Imagen" width="150">
+        <p id="text">Ningún mensaje fue encontrado</p>
+       <p id="little-text">Ingresa el texto que deseeas encriptar o desencriptar</p>
+       </div>
+    </div>
+</div>
+
+
+</main>
+<footer>Realizado por María Soledad Oscar <i class="fa-solid fa-heart"></i> - 2024</footer>
+
+
+<script src="script.js"></script>
+</body>
+</html>
