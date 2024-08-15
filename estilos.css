@@ -1,0 +1,196 @@
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #E5E5E5;
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+  }
+
+ footer {
+   
+   color: palevioletred;
+   position: relative; /*para que siempre quede abajo*/
+   width: 100%;
+   height:30px; 
+   text-align: center;
+   line-height: 60px; /* Centrar texto verticalmente */
+   font-size: 14px;
+ }
+
+
+  button, input {
+    font-family: inherit; 
+  }
+
+
+main{
+   display: flex;
+   flex-wrap: wrap;
+   width: 90%;
+   margin: 10px;
+   margin-left: 30px;
+   padding: 20px;
+   justify-content: space-between;
+
+}
+
+
+
+#ingresarTexto {
+   background-color: transparent;
+   margin-top: 40px;
+   margin-left: 30px;
+   border: none;
+   width: 70%;
+   height: 300px;
+   font-family: "Inter", sans-serif;
+   font-size: 26px;
+   font-weight: 400;
+   padding: 10px;
+   text-align: left; /* Alinea el texto a la izquierda */
+   line-height: 1.2; /* Ajusta el espacio entre líneas */
+   resize: none; /* Evita que el usuario pueda redimensionar el textarea */
+   overflow: auto; /* Permite el desplazamiento si el texto es muy largo */
+   overflow-wrap: break-word; /* Evita el desbordamiento horizontal del texto */
+   white-space: pre-wrap;
+    box-sizing: border-box;
+    max-width: 70%; /* Limita el tamaño máximo del textarea */
+    max-height: 300px; /* Limita la altura máxima del textarea */
+}
+
+#ingresarTexto::placeholder {
+   color: grey;
+   text-align: left; /* Alinea el placeholder a la izquierda */
+   opacity: 1; /* Asegura que el placeholder sea visible */
+}
+
+#text-box {
+   width: 300px;
+   height:368px; 
+   padding: 40px;
+   background-color: white;
+   border-radius: 32px;
+   text-align: center;
+   overflow: hidden;
+}
+
+#text-area {
+   margin-bottom: 20px;
+}
+
+#text {
+   font-size: 24px;
+   margin-bottom: 10px;
+}
+
+#little-text {
+   font-size: 16px;
+   color: grey;
+}
+
+#image {
+   margin-bottom: 20px;
+}
+
+
+
+#validacionMensaje {
+   font-size: 14px;
+   margin-top: 5px;
+}
+  
+ button{
+  width: 300px;
+  height :40px ;
+  border-radius: 24px ;
+  font-size: 16px;
+  cursor: pointer;
+  border: 2px solid transparent;
+  transition: border-color 0.3s ease;
+
+ }
+
+ #botones{
+   margin-top: 30px;
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: center;
+   gap: 20px;
+ }
+
+ .encripta{
+   background-color: #0A3871;
+   color:#E5E5E5;
+ }
+
+ .desencripta{
+   background-color:#8db8f1 ;
+ }
+ button:hover {
+    border-color: rgb(83, 83, 177);
+ }
+
+ .aclaracion{
+    color: grey;
+    font-size: 12px;
+ }
+
+
+@media (max-width: 1106px) {
+   .container1, .container2 {
+      margin-bottom: 20px; 
+   }
+}
+
+
+@media (max-width: 768px) {
+
+  main {
+   flex-direction: column;
+   width: 100%; 
+  }
+  .container1, .container2 {
+   width: 85%; /* Asegura que ambos contenedores ocupen todo el ancho */
+}
+
+#text-box {
+   width: 80%;
+   margin: 30px auto; /* Centrar */
+}
+
+
+@media (max-width: 391px)   {
+   main{
+   width: 90%;
+   display: flex;
+   flex-direction: column; /* fila */
+   justify-content: center;
+   align-items: center;
+   }
+   #ingresarTexto{
+      font-size: 18px;
+      height: 200px;
+   }
+   #text-box {
+      width: 90%; /* Reduce el ancho al 90% del contenedor principal */
+      height: 230px; /* Ajusta la altura de la caja */
+      padding: 20px; /* Reduce el padding */
+  }
+  #botones{
+   display: flex;
+   justify-content: center;
+
+  }
+  #image {
+   display: none; 
+  }
+
+  
+   
+ }
+
+   
+}
+
